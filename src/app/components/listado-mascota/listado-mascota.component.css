@@ -17,3 +17,20 @@ table {
     font-size: 14px;
     width: 100%;
 }
+
+.delete{
+    color: #E15639;
+    cursor: pointer;
+}
+.edit{
+    color: #1878B0;
+    cursor: pointer;
+}
+.search{
+    cursor: pointer;
+}
+
+.addNew{
+    font-size: 14px;
+    line-height: 28px;
+}

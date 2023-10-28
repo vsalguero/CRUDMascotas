@@ -4,6 +4,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Mascota } from 'src/app/interface/mascota';
 
+
 const ELEMENT_DATA: Mascota[] = [
   { id: 1, name: 'Ciro', age: 3, breed: "Perro", color: "Red", weight: 10 },
   { id: 2, name: 'Rufo', age: 3, breed: "Perro", color: "Red", weight: 10 },
@@ -25,7 +26,7 @@ const ELEMENT_DATA: Mascota[] = [
   styleUrls: ['./listado-mascota.component.css']
 })
 export class ListadoMascotaComponent implements OnInit, AfterViewInit {
-  displayedColumns: string[] = ['id', 'name', 'age', 'breed', 'color', 'weight'];
+  displayedColumns: string[] = ['id', 'name', 'age', 'breed', 'color', 'weight', 'actions'];
   dataSource = new MatTableDataSource<Mascota>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
